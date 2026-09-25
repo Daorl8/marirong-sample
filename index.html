@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>마리롱 · Mari Rong | 포항 동해 수제 디저트</title>
+<meta name="description" content="포항 동해, 크고 가성비 좋은 수제 디저트 마리롱. 휘낭시에·마카롱·쿠키·에그타르트·소금빵까지 매일 직접 만들어요." />
+<meta name="theme-color" content="#CBB4EC" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="마리롱 · Mari Rong 디저트샵" />
+<meta property="og:description" content="포항 동해, 크고 가성비 좋은 수제 디저트. 매일 직접 만드는 휘낭시에·마카롱·쿠키." />
+<meta property="og:image" content="og-marirong.jpg" />
+<meta property="og:locale" content="ko_KR" />
+
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="favicon.png" />
+
+<!-- JSON-LD(Bakery) 포함. 미포함=도메인 확정 후 추가: canonical · og:url · 절대경로 og:image -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "마리롱",
+  "alternateName": "Mari Rong",
+  "description": "포항 동해, 크고 가성비 좋은 수제 디저트.",
+  "image": "og-marirong.jpg",
+  "telephone": "+82-507-1371-4761",
+  "servesCuisine": ["디저트", "베이커리", "마카롱"],
+  "address": { "@type": "PostalAddress", "streetAddress": "동해면 일월로 73-1 1층", "addressLocality": "포항시 남구", "addressRegion": "경상북도", "addressCountry": "KR" },
+  "hasMap": "https://map.naver.com/p/entry/place/1025763123",
+  "sameAs": ["https://www.instagram.com/mari_rong_/"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "13:00", "closes": "20:00" }
+  ]
+}
+</script>
+
+<!-- Fonts (시안: CDN · 납품 시 self-host 예정) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+<style>
+/* ============================================================
+   마리롱 (Mari Rong) — 포항 동해 수제 디저트 · 연보라 큐트
+   연보라 + 화이트 · 둥글고 두꺼운 폰트(Jua) · 캐릭터 활용
+   ============================================================ */
+:root{
+  --lav-bg:   #FFFFFF;   /* 메인 화이트 */
+  --lav-soft: #F7F2FC;   /* 섹션 연보라 워시 (아주 옅음) */
+  --lav:      #CBB4EC;   /* 연보라 포인트 (버튼·태그·블롭 fill) */
+  --lav-hover:#C0A6E8;
+  --lav-line: #E7DBF6;   /* 연보라 라인 */
+  --lav-foot: #EFE7FA;   /* 푸터 옅은 연보라 */
+  --lav-deep: #7E5CC0;   /* 연보라 액센트 텍스트 (AA: 화이트 5.0·소프트 4.6) */
+  --lav-text: #7E5CC0;
+  --ink:      #3A3247;   /* 다크 플럼 본문 */
+  --ink-soft: #6B6277;
+  --paper:    #FFFFFF;
+  --pink:     #F6C3D0;   /* 볼 핑크 (fill) */
+  --pink-deep:#B8476B;   /* 휴무 텍스트 (AA) */
+  --sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --round: "Jua", var(--sans);   /* 둥글고 두꺼운 큐트 */
+  --maxw: 1080px;
+  --gut: clamp(18px, 5vw, 52px);
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+body{ margin:0; font-family:var(--sans); color:var(--ink); background:var(--lav-bg); line-height:1.72; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+.wrap{ max-width:var(--maxw); margin:0 auto; padding-inline:var(--gut); position:relative; }
+section{ padding-block:clamp(52px,9vw,96px); position:relative; }
+.round{ font-family:var(--round); }
+h1,h2,h3{ margin:0; font-family:var(--round); font-weight:400; line-height:1.24; letter-spacing:-.01em; }
+
+.kick{ font-family:var(--round); color:var(--lav-deep); font-size:1.1rem; }
+.sec-head{ text-align:center; margin-bottom:clamp(30px,5vw,50px); }
+.sec-head h2{ font-size:clamp(1.9rem,5.4vw,2.9rem); }
+.sec-head h2 em{ font-style:normal; color:var(--lav-deep); }
+.sec-head p{ color:var(--ink-soft); margin:.4em auto 0; max-width:44ch; }
+
+/* buttons */
+.btn{ font-family:var(--round); font-size:1.06rem; display:inline-flex; align-items:center; gap:.4em; padding:.62em 1.4em; background:var(--lav); color:var(--ink); border:none; border-radius:999px; box-shadow:0 6px 16px -8px rgba(133,95,206,.5); transition:transform .16s, box-shadow .16s, background .16s; }
+.btn:hover{ transform:translateY(-3px); background:var(--lav-hover); box-shadow:0 12px 22px -10px rgba(133,95,206,.55); }
+.btn:focus-visible{ outline:3px solid var(--lav-deep); outline-offset:3px; }
+.btn.pink{ background:var(--pink); color:var(--ink); box-shadow:0 6px 16px -8px rgba(217,110,143,.45); }
+.btn.pink:hover{ background:#F2B4C5; }
+.btn.ghost{ background:#fff; color:var(--lav-text); border:2px solid var(--lav); box-shadow:none; }
+
+/* deco blobs */
+.blob{ position:absolute; border-radius:50%; z-index:0; pointer-events:none; }
+
+/* header */
+.site-head{ position:sticky; top:0; z-index:60; background:rgba(245,240,252,.86); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:2px solid var(--lav); }
+.site-head .row{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:9px var(--gut); max-width:var(--maxw); margin:0 auto; }
+.brand{ display:flex; align-items:center; gap:.45em; }
+.brand img{ width:42px; height:42px; border-radius:50%; background:#fff; border:2px solid var(--lav); object-fit:contain; }
+.brand b{ font-family:var(--round); font-size:1.4rem; color:var(--ink); }
+.nav{ display:flex; align-items:center; gap:clamp(12px,2.4vw,26px); }
+.nav a:not(.btn){ font-family:var(--round); font-size:1.1rem; color:var(--ink); }
+.nav a:not(.btn):hover{ color:var(--lav-deep); }
+.nav .btn{ padding:.42em 1.05em; font-size:.98rem; }
+@media (max-width:720px){ .nav a:not(.btn){ display:none; } }
+
+/* hero */
+.hero{ text-align:center; overflow:clip; }
+.hero .blob.a{ width:300px; height:300px; background:var(--lav-foot); top:-40px; left:-80px; }
+.hero .blob.b{ width:240px; height:240px; background:#FCEAF0; bottom:-30px; right:-70px; }
+.hero .wrap{ z-index:1; }
+.hero-char{ width:clamp(170px,34vw,260px); margin:0 auto; animation:bob 3.8s ease-in-out infinite; }
+@keyframes bob{ 0%,100%{ transform:translateY(0) rotate(-2deg);} 50%{ transform:translateY(-12px) rotate(2deg);} }
+.hero h1{ font-size:clamp(2.8rem,9vw,4.8rem); color:var(--ink); margin-top:.2rem; }
+.hero h1 .lav{ color:var(--lav-deep); }
+.hero .sub{ font-family:var(--round); font-size:clamp(1.2rem,3.2vw,1.6rem); color:var(--lav-text); margin:.5rem 0 .2rem; }
+.hero .lead{ color:var(--ink-soft); max-width:30ch; margin:.6rem auto 1.7rem; word-break:keep-all; }
+.hero-cta{ display:flex; gap:.7rem; justify-content:center; flex-wrap:wrap; }
+.hero-tags{ display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap; margin-top:1.7rem; }
+.hero-tags span{ font-family:var(--round); font-size:1rem; color:var(--lav-text); background:#fff; border:2px solid var(--lav); border-radius:999px; padding:.15em .9em; }
+
+/* intro */
+.intro{ background:var(--lav-soft); }
+.intro .wrap{ display:grid; grid-template-columns:auto 1fr; gap:clamp(24px,5vw,56px); align-items:center; }
+.intro-char{ width:clamp(120px,20vw,180px); }
+.intro h2{ font-size:clamp(1.6rem,4.4vw,2.3rem); color:var(--ink); margin-bottom:.5em; }
+.intro p{ margin:0 0 1em; color:var(--ink); }
+.intro p:last-child{ margin-bottom:0; }
+.intro b{ color:var(--lav-text); }
+@media (max-width:680px){ .intro .wrap{ grid-template-columns:1fr; text-align:center; } .intro-char{ margin:0 auto; } }
+
+/* menu */
+.menu-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(14px,2.4vw,24px); }
+.mcard{ background:var(--paper); border-radius:24px; overflow:hidden; box-shadow:0 10px 26px -18px rgba(133,95,206,.35); border:2px solid var(--lav-line); transition:transform .22s, box-shadow .22s; }
+.mcard:hover{ transform:translateY(-6px); box-shadow:0 16px 30px -14px rgba(107,75,163,.5); }
+.mcard .ph{ overflow:hidden; }
+.mcard .ph img{ width:100%; aspect-ratio:1/1; object-fit:cover; transition:transform 1s ease; }
+.mcard:hover .ph img{ transform:scale(1.07); }
+.mcard .body{ padding:12px 14px 16px; text-align:center; }
+.mcard h3{ font-size:1.16rem; color:var(--ink); }
+.mcard p{ margin:.15em 0 0; font-size:.85rem; color:var(--ink-soft); }
+@media (max-width:820px){ .menu-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:420px){ .menu-grid{ grid-template-columns:1fr; max-width:320px; margin-inline:auto; } }
+
+/* full lineup */
+.lineup{ margin-top:clamp(30px,5vw,48px); background:var(--paper); border-radius:26px; padding:clamp(24px,4vw,38px); box-shadow:0 10px 26px -18px rgba(107,75,163,.4); }
+.lineup-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:clamp(20px,3vw,34px); }
+.lineup h4{ font-family:var(--round); font-size:1.24rem; color:var(--lav-deep); margin:0 0 .5rem; display:flex; align-items:center; gap:.4em; }
+.lineup ul{ list-style:none; margin:0; padding:0; }
+.lineup li{ padding:.2em 0; color:var(--ink); font-size:.98rem; }
+.lineup li::before{ content:"·"; color:var(--lav-deep); font-weight:700; margin-right:.5em; }
+.menu-note{ text-align:center; margin-top:clamp(22px,3vw,32px); color:var(--ink-soft); font-size:.94rem; }
+
+/* info */
+.info{ background:var(--lav-soft); }
+.info-grid{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(20px,4vw,40px); }
+.icard{ background:var(--paper); border-radius:26px; padding:clamp(22px,4vw,34px); box-shadow:0 10px 26px -18px rgba(107,75,163,.4); }
+.icard h3{ font-size:1.5rem; color:var(--ink); margin-bottom:1rem; }
+.hours{ list-style:none; margin:0; padding:0; }
+.hours li{ display:flex; justify-content:space-between; padding:.5em 0; border-bottom:1px solid var(--lav-line); font-size:1rem; }
+.hours li .d{ font-family:var(--round); }
+.hours li.off .t{ color:var(--pink-deep); font-weight:600; }
+.hours li .t{ font-variant-numeric:tabular-nums; color:var(--ink-soft); }
+.addr{ font-size:1.02rem; line-height:1.8; }
+.addr .land{ display:block; color:var(--ink-soft); font-size:.92rem; margin-top:.3rem; }
+.addr .tel{ display:block; font-family:var(--round); font-size:1.6rem; color:var(--lav-deep); margin:1rem 0 .2rem; }
+.icard .acts{ display:flex; gap:.6rem; flex-wrap:wrap; margin-top:1.2rem; }
+@media (max-width:680px){ .info-grid{ grid-template-columns:1fr; } }
+
+/* footer */
+.site-foot{ background:var(--lav-foot); color:var(--ink); text-align:center; padding:clamp(44px,7vw,64px) var(--gut) 40px; border-top:2px solid var(--lav-line); }
+.site-foot img{ width:76px; height:76px; margin:0 auto .6rem; border-radius:50%; background:#fff; border:2px solid var(--lav); object-fit:contain; }
+.site-foot .big{ font-family:var(--round); font-size:2rem; color:var(--lav-deep); }
+.site-foot p{ margin:.4em 0; font-size:.92rem; color:var(--ink-soft); }
+.site-foot .fine{ margin-top:1rem; font-size:.78rem; color:var(--ink-soft); }
+
+/* reveal */
+.reveal{ opacity:0; transform:translateY(20px); transition:opacity .7s ease, transform .7s cubic-bezier(.34,1.4,.64,1); }
+.reveal.in{ opacity:1; transform:none; }
+.reveal.d1{ transition-delay:.07s; } .reveal.d2{ transition-delay:.14s; } .reveal.d3{ transition-delay:.21s; }
+@media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } .reveal{ opacity:1; transform:none; } .hero-char{ animation:none; } }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-head">
+  <div class="row">
+    <a class="brand" href="#top" aria-label="마리롱 홈">
+      <img src="mr-char.webp" alt="" width="42" height="42" />
+      <b class="round">마리롱</b>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#about">소개</a>
+      <a href="#menu">메뉴</a>
+      <a href="#visit">오시는길</a>
+      <a class="btn pink" href="https://www.instagram.com/mari_rong_/" target="_blank" rel="noopener">인스타 예약</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <span class="blob a" aria-hidden="true"></span>
+  <span class="blob b" aria-hidden="true"></span>
+  <div class="wrap">
+    <img class="hero-char" src="mr-logo.webp" alt="마리롱 마스코트 캐릭터 - 쿠키를 든 하얀 고양이" width="300" height="300" />
+    <h1 class="reveal">마<span class="lav">리</span>롱</h1>
+    <p class="sub reveal d1">Mari Rong · Dessert Shop</p>
+    <p class="lead reveal d1">포항 동해, 크고 가성비 좋은 수제 디저트를 매일 하나하나 직접 만들어요.</p>
+    <div class="hero-cta reveal d2">
+      <a class="btn pink" href="https://www.instagram.com/mari_rong_/" target="_blank" rel="noopener">인스타에서 예약하기</a>
+      <a class="btn ghost" href="tel:0507-1371-4761">전화 문의</a>
+    </div>
+    <div class="hero-tags reveal d3">
+      <span>휘낭시에</span><span>마카롱</span><span>수제 쿠키</span><span>에그타르트</span><span>소금빵</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="intro" id="about">
+  <div class="wrap">
+    <img class="intro-char reveal" src="mr-char.webp" alt="마리롱 캐릭터" width="180" height="180" />
+    <div class="reveal d1">
+      <span class="kick">Mari Rong Story</span>
+      <h2>매일 직접 만드는<br />크고 가성비 좋은 디저트</h2>
+      <p>안녕하세요, 포항 동해에서 <b>수제 디저트</b>로 많은 분들께 사랑받고 있는 마리롱입니다. 외부 완제품을 들여와 진열하는 게 아니라, 하나하나 <b>직접 만들기에</b> 더욱 맛있어요.</p>
+      <p>대부분 <b>합리적인 가격</b>이라, 인스타그램이나 전화로 <b>미리 예약</b>하시면 갓 만든 디저트를 편하게 가져가실 수 있어요. (학생분들을 위한 <b>아침 오픈</b>도 인스타 공지로 안내드려요!)</p>
+      <p>매일 만들어지는 메뉴가 달라, 언제 오셔도 새로운 마음으로 즐기실 수 있답니다. 오늘의 라인업은 인스타그램 게시물에서 확인해 주세요!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kick">Today's Menu</span>
+      <h2>오늘의 <em>디저트</em></h2>
+      <p>대표 메뉴들이에요. 매일 조금씩 달라지고, 위에 없는 메뉴도 다양하게 준비돼요!</p>
+    </div>
+    <div class="menu-grid">
+      <article class="mcard reveal"><div class="ph"><img loading="lazy" src="mr-financier.webp" alt="마리롱 휘낭시에 단면" width="300" height="300" /></div><div class="body"><h3>휘낭시에</h3><p>크림치즈 · 초코칩 · 솔티바닐라</p></div></article>
+      <article class="mcard reveal d1"><div class="ph"><img loading="lazy" src="mr-macaron.webp" alt="딸기 마카롱" width="300" height="300" /></div><div class="body"><h3>마카롱</h3><p>딸기요거트부터 흑임자떡까지</p></div></article>
+      <article class="mcard reveal d2"><div class="ph"><img loading="lazy" src="mr-creamcookie.webp" alt="크림치즈 쿠키" width="300" height="300" /></div><div class="body"><h3>크림치즈 쿠키</h3><p>속에 꽉 찬 부드러운 크림치즈</p></div></article>
+      <article class="mcard reveal d3"><div class="ph"><img loading="lazy" src="mr-cookie.webp" alt="초코칩 아몬드 쿠키" width="300" height="300" /></div><div class="body"><h3>초코 아몬드 쿠키</h3><p>큼직하고 든든한 오리지널</p></div></article>
+      <article class="mcard reveal"><div class="ph"><img loading="lazy" src="mr-saltbread.webp" alt="소금빵" width="300" height="300" /></div><div class="body"><h3>소금빵</h3><p>겉바속촉 버터 향 가득</p></div></article>
+      <article class="mcard reveal d1"><div class="ph"><img loading="lazy" src="mr-eggtart.webp" alt="에그타르트" width="300" height="300" /></div><div class="body"><h3>에그타르트</h3><p>바삭한 겉과 진한 커스터드</p></div></article>
+      <article class="mcard reveal d2"><div class="ph"><img loading="lazy" src="mr-oreo.webp" alt="오레오 크림 케이크" width="300" height="300" /></div><div class="body"><h3>오레오 디저트</h3><p>오레오 가득 크림 케이크</p></div></article>
+      <article class="mcard reveal d3"><div class="ph"><img loading="lazy" src="mr-fruitcup.webp" alt="과일 컵 디저트" width="300" height="300" /></div><div class="body"><h3>과일 컵</h3><p>제철 과일 듬뿍 컵 디저트</p></div></article>
+    </div>
+
+    <div class="lineup reveal">
+      <div class="lineup-grid">
+        <div>
+          <h4>휘낭시에</h4>
+          <ul><li>크림치즈</li><li>초코칩</li><li>솔티바닐라</li><li>코코넛</li><li>크럼블</li><li>플레인</li></ul>
+        </div>
+        <div>
+          <h4>쿠키 · 스콘</h4>
+          <ul><li>오리지널 초코 아몬드</li><li>화이트 초코 아몬드</li><li>버터 쿠키</li><li>누가 쿠키</li><li>플레인 스콘</li></ul>
+        </div>
+        <div>
+          <h4>마카롱 · 그 외</h4>
+          <ul><li>마카롱 (딸기요거트·흑임자떡 등)</li><li>꼬끄 후레이크</li><li>에그타르트</li><li>소금빵</li></ul>
+        </div>
+      </div>
+      <p class="menu-note">매일 만드는 메뉴가 달라요 · 정확한 오늘의 라인업은 <b>인스타그램</b>에서 확인해 주세요!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INFO ============ -->
+<section class="info" id="visit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kick">Visit &amp; Hours</span>
+      <h2>오시는 길 &amp; <em>영업시간</em></h2>
+      <p>동해초등학교 정문 앞, 화요일부터 토요일까지 문을 열어요</p>
+    </div>
+    <div class="info-grid">
+      <div class="icard reveal">
+        <h3>영업시간</h3>
+        <ul class="hours">
+          <li><span class="d">화요일</span><span class="t">13:00 – 20:00</span></li>
+          <li><span class="d">수요일</span><span class="t">13:00 – 20:00</span></li>
+          <li><span class="d">목요일</span><span class="t">13:00 – 20:00</span></li>
+          <li><span class="d">금요일</span><span class="t">13:00 – 20:00</span></li>
+          <li><span class="d">토요일</span><span class="t">13:00 – 20:00</span></li>
+          <li class="off"><span class="d">일요일</span><span class="t">정기휴무</span></li>
+          <li class="off"><span class="d">월요일</span><span class="t">정기휴무</span></li>
+        </ul>
+        <p class="menu-note" style="text-align:left;margin-top:1rem">학생분들을 위한 아침 오픈은 인스타 공지를 확인해 주세요!</p>
+      </div>
+      <div class="icard reveal d1">
+        <h3>오시는 길</h3>
+        <p class="addr">
+          경상북도 포항시 남구<br />동해면 일월로 73-1 1층
+          <span class="land">동해초등학교 정문 앞 · 옛주소 도구리 641-10</span>
+          <a class="tel" href="tel:0507-1371-4761">0507 · 1371 · 4761</a>
+        </p>
+        <div class="acts">
+          <a class="btn" href="https://map.naver.com/p/entry/place/1025763123" target="_blank" rel="noopener">네이버 지도</a>
+          <a class="btn pink" href="https://www.instagram.com/mari_rong_/" target="_blank" rel="noopener">인스타그램</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-foot">
+  <img src="mr-char.webp" alt="마리롱 캐릭터" width="76" height="76" />
+  <p class="big">마리롱 · Mari Rong</p>
+  <p>경북 포항시 남구 동해면 일월로 73-1 1층 · 0507-1371-4761</p>
+  <p>화–토 13:00–20:00 · 일·월 정기휴무 · @mari_rong_</p>
+  <p class="fine">© 2026 마리롱 Mari Rong. 매일 직접 만드는 수제 디저트.</p>
+</footer>
+
+<script>
+(function(){
+  var items=[].slice.call(document.querySelectorAll('.reveal'));
+  var show=function(el){ el.classList.add('in'); };
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ show(e.target); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+    items.forEach(function(el){ io.observe(el); });
+    setTimeout(function(){ items.forEach(show); }, 2400);
+  } else { items.forEach(show); }
+  var HEAD=64;
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(ev){
+      var id=a.getAttribute('href'); if(id.length<2) return; var t=document.querySelector(id); if(!t) return; ev.preventDefault();
+      var sY=window.scrollY, eY=t.getBoundingClientRect().top+window.scrollY-HEAD, d=Math.min(850,Math.max(300,Math.abs(eY-sY)*.5)), s=null;
+      var ease=function(t){ return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2; };
+      var step=function(ts){ if(s===null)s=ts; var p=Math.min(1,(ts-s)/d); window.scrollTo(0,sY+(eY-sY)*ease(p)); if(p<1) requestAnimationFrame(step); };
+      requestAnimationFrame(step);
+    });
+  });
+})();
+</script>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</body>
+</html>
